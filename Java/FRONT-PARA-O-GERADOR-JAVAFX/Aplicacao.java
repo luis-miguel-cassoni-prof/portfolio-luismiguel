@@ -1,5 +1,6 @@
 import gerador.Gerador;
 import javafx.application.Application;
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -51,6 +52,8 @@ public class Aplicacao extends Application {
 
         VBox layout = new VBox(titulo, tamanho, vlrTamanho, botaoTamanho, senhaGerada, senhaParaCopiar);
         layout.setAlignment(Pos.CENTER);
+        layout.setSpacing(10);
+        layout.setPadding(new Insets(10));
         layout.getStyleClass().add("fundo");
 
         Scene cena = new Scene(layout, 400, 300);
