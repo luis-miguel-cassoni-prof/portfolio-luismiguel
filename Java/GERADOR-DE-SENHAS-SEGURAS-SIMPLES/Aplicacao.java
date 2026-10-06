@@ -28,3 +28,13 @@ public class Aplicacao {
         input.close();
     }
 }
+
+/*
+PARA COMPILAR LOCALMENTE UTILIZE: javac Aplicacao.java
+PARA RODAR LOCALMENTE UTILIZE: java Aplicacao
+
+REQUISITOS: JDK22
+
+Created By: @luismiguelcassoni INSTAGRAM, luis-miguel-cassoni-prof GITHUB
+My Linkedin: https://www.linkedin.com/in/lu%C3%ADs-miguel-cassoni-0a217a397/
+*/
