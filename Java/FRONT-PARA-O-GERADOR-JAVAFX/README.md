@@ -1,41 +1,33 @@
-# PROJETO GERADOR DE SENHA SEGURAS SIMPLES
+# PROJETO FRONT PARA GERADOR DE SENHA SEGURAS SIMPLES
 
 # COMO FOI FEITO?
-O projeto foi feito utilizando Java 22, utilizando somente as bibliotecas oferecidas pelo próprio Java
+O projeto foi feito utilizando Java 22, utilizando a biblioteca externa JavaFX 22.
 
 # EXPLICANDO DECISÕES
-O projeto possui uma pasta chamada "gerador". Nela está localizada a classe que importa SecureRandom.
+Para entender o projeto de Gerador de Senhas entre no link abaixo:
 
-COMO GERADOR FUNCIONA?
-- A constante final CARACTERES recebe todos os caracteres disponíveis no gerador.
-- O método gerarSenha recebe a quantidade de caracteres que a senha deve gerar.
-- O método cria uma instância de SecureRandom para escolher valores aleatórios, e uma instância de StringBuilder para facilitar a alteração de Strings.
-- Em um laço de repetição a variável indice recebe um índice aleatório da constante CARACTERES.
-- A variável senha recebe um caractere de seu respectivo índice.
-- Ao final, o método retorna a String completa com a senha gerada.
+https://github.com/luis-miguel-cassoni-prof/portfolio-luismiguel/tree/main/Java/GERADOR-DE-SENHAS-SEGURAS-SIMPLES
 
-O método Main está na classe denominada "Aplicacao".
+Como funciona o Front-End:
+- Ele é feito utilizando JavaFX 22.
+- A estilização é feita pela folha de estilos style.css.
+- O módulo do JavaFX utilizado é o controls
+- A disposição dos elementos é feita em uma VBOX centralizada de resolução 400x300.
+- A senha é gerada por meio de uma expressão lambda setOnAction() no botão.
+- A senha possui tratamento de erros try-catch para caso de de entradas inválidas, capturando a exceção NumberFormatException.
+- Após a geração da senha, ela entra em um TextField que permite que ela seja copiada e colada.
 
-COMO A APLICAÇÃO FUNCIONA?
-- Por meio do Objeto Scanner, da classe java Scanner, inicializado e devidamente fechado para não ocorrer nenhum vazamento de memória, os inputs do usuário são lidos.
-- Uma instância da classe Gerador no pacote Gerador lê seus métodos.
-- Com um tratamento try-catch que pode prever Input de tipo indevido (InputMismatchException), é inicializado o processo de receber os dados.
-- O próprio Scanner já impede entradas de tipo null, mas caso elas ocorram, um tratamento preventivo captura NullPointerException e encerra a aplicação em segurança.
-- Ao receber a quantia de caracteres desejados, o método gerarSenha() é chamado e recebe a quantia de caracteres.
-- Uma condicional consegue impedir que a senha gerada tenha menos de 8 caracteres. Ela fecha o Scanner e retorna, finalizando o programa sem nenhum vazamento de memória.
-- Ao final, o programa retorna a senha.
-
-Conceitos Trabalhados:
-- Aleatoriedade segura com a classe SecureRandom.
+Os conceitos trabalhados foram:
 - Programação Orientada a Objetos.
-- Inputs do Usuário.
-- Geração de senhas com caracteres definidos em uma constante.
+- JavaFX22 + Estilização CSS.
+- Expressões Lambda em setOnAction() de botão.
+- Tratamento de Exceções
 
 # COMO RODAR O PROJETO
-Para rodar o projeto você precisa ter instalado o JDK (Java Development Kit) na versão 22.
+Para rodar o projeto você precisa ter instalado o JDK (Java Development Kit) na versão 22, e a biblioteca externa JavaFX na versão 22.0.1.
 
 No terminal do seu sistema operacional:
 
-COMPILAÇÃO: javac Aplicacao.java
+COMPILAÇÃO: javac --module-path "%PATH_TO_FX%" --add-modules javafx.controls Aplicacao.java
 
-EXECUÇÃO: java Aplicacao
+EXECUÇÃO: java --module-path "%PATH_TO_FX%" --add-modules javafx.controls Aplicacao
