@@ -1,0 +1,16 @@
+.titulo-tempo {
+    -fx-font-size: 30px;
+    -fx-font-family: "Arial";
+    -fx-text-fill: darkblue;
+    -fx-font-style: italic;
+}
+
+.rotulo-tempo {
+    -fx-font-size: 24px;
+    -fx-font-family: "Arial";
+    -fx-text-fill: yellow;
+}
+
+.fundo {
+    -fx-background-color: rgb(191, 255, 191);
+}
