@@ -1,3 +1,8 @@
 # PORTFÓLIO LUÍS MIGUEL
 
-Este é meu portfólio pessoal, contém projetos meus em diferentes linguagens e ferramentas.
+Sou Luís Miguel, estudante de Engenharia de Software e esse repositório serve para mostrar projetos que demonstram a direção de meus estudos, e a minha evolução como desenvolvedor.
+
+# TECNOLOGIAS/FERRAMENTAS
+- Java
+- JavaFX
+- Git / Github
