@@ -5,10 +5,15 @@ O projeto foi feito no Java Development Kit 22, utilizando a biblioteca externa 
 
 # EXPLICANDO DECISÕES
 O projeto utiliza a biblioteca JavaFX 22 para o Front-End.
+
 O projeto utiliza principalmente bibliotecas locais do Java como LocalDateTime e DateTimeFormatter.
+
 A constante DateTimeFormatter FORMATADOR define o padrão da exibição das horas.
-O projeto é estilizado com um arquivo Style.css
+
+O projeto é estilizado com um arquivo Style.css.
+
 O palco utiliza dois Objetos keyFrame: 
+
 - O primeiro utiliza uma expressão lambda para alterar a Label que exibe o horário.
 - O segundo objeto KeyFrame define o intervalo de 1 segundo.
 
