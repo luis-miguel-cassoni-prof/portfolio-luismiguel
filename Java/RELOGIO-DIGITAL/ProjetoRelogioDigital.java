@@ -5,6 +5,7 @@ import java.time.format.DateTimeFormatter;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
+import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
@@ -12,7 +13,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
-public class ProjetoRelogioDigital {
+public class ProjetoRelogioDigital extends Application {
     final DateTimeFormatter FORMATADOR = DateTimeFormatter.ofPattern("HH:mm:ss");
 
     @Override 
