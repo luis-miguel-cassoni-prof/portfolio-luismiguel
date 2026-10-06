@@ -17,7 +17,12 @@ O palco utiliza dois Objetos keyFrame:
 - O primeiro utiliza uma expressão lambda para alterar a Label que exibe o horário.
 - O segundo objeto KeyFrame define o intervalo de 1 segundo.
 
-O palco também utiliza um Objeto Timeline responsável por receber os KeyFrames e decidir quantas vezes essa timeline deve ser executada. (No caso do projeto, definida como "INDEFINITE" para rodar sem parar)
+O palco também utiliza um Objeto Timeline responsável por receber os KeyFrames e decidir quantas vezes essa timeline deve ser executada. (No caso do projeto, definida como "INDEFINITE" para rodar sem parar).
+
+Os conceitos trabalhados foram:
+- Programação Orientada a Objetos
+- JavaFX + Estilização CSS
+- KeyFrames e Timeline para atualização do estado de Label a cada segundo
 
 # COMO RODAR O PROJETO
 Para rodar o projeto você precisa ter instalado o JDK (Java Development Kit) na versão 22, e a biblioteca externa JavaFX na versão 22.0.1
