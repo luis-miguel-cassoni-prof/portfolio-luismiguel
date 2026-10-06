@@ -38,6 +38,7 @@ public class ProjetoRelogioDigital extends Application {
 
         VBox layout = new VBox(titulo, rotuloTempo);
         layout.setAlignment(Pos.CENTER);
+        layout.setSpacing(10);
         layout.getStyleClass().add("fundo");
 
         Scene cena = new Scene(layout, 200, 200);
@@ -51,3 +52,13 @@ public class ProjetoRelogioDigital extends Application {
         launch(args);
     }
 }
+
+/*
+PARA COMPILAR LOCALMENTE UTILIZE: javac --module-path "%PATH_TO_FX%" --add-modules javafx.controls ProjetoRelogioDigital.java
+PARA RODAR LOCALMENTE UTILIZE: java --module-path "%PATH_TO_FX%" --add-modules javafx.controls ProjetoRelogioDigital
+
+REQUISITOS: JDK22, JavaFX 22.0.1
+
+Created By: @luismiguelcassoni INSTAGRAM, luis-miguel-cassoni-prof GITHUB
+My Linkedin: https://www.linkedin.com/in/lu%C3%ADs-miguel-cassoni-0a217a397/
+*/
