@@ -20,4 +20,5 @@ Para rodar o projeto você precisa ter instalado o JDK (Java Development Kit) na
 No terminal do seu sistema operacional:
 
 COMPILAÇÃO: javac --module-path "%PATH_TO_FX%" --add-modules javafx.controls Aplicacao.java
+
 EXECUÇÃO: java --module-path "%PATH_TO_FX%" --add-modules javafx.controls Aplicacao
