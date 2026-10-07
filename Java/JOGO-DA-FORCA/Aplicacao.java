@@ -18,6 +18,7 @@ public class Aplicacao {
         int tentativas = 6;
 
         while(!palavraDescoberta && tentativas > 0) {
+            System.out.println();
             System.out.println("Palavra: " + letrasDescobertas);
             System.out.println("Você tem " + tentativas + " tentativas!");
             System.out.println("Digite uma Letra: ");
