@@ -4,7 +4,7 @@
 O projeto foi feito no Java Development Kit 22, utilizando a biblioteca externa JavaFX 22.
 
 # EXPLICANDO DECISÕES
-O design do projeto utiliza uma TextArea e 2 botões. O botão abrir, e o botão salvar.
+O design do projeto utiliza uma TextArea e 2 botões. O botão abrir, e o botão salvar. Ambos estilizados com formatação CSS
 
 Além disso, há um Objeto FileChooser, configurado para receber apenas arquivos.txt
 
@@ -18,7 +18,8 @@ Há também, em ambos, uma condicional para verificar se o arquivo não é nulo,
 
 Os conceitos trabalhados nesse projeto foram:
 - Programação Orientada a Objetos
-- JavaFX + Estilização CSS
+- JavaFX + Estilização CSS + FileChooser
+- Java IO e Java NIO
 - Eventos setOnAction() com expressões LAMBDA.
 - Tratamento de Excessões utilizando try-catch
 
