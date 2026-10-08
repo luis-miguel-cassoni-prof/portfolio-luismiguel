@@ -1,4 +1,4 @@
-# PROJETO CALCULADORA IMC
+# PROJETO EDITOR DE TEXTO
 
 # COMO FOI FEITO?
 O projeto foi feito no Java Development Kit 22, utilizando a biblioteca externa JavaFX 22.
