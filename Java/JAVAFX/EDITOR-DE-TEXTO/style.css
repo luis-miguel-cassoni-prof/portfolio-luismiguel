@@ -1,0 +1,6 @@
+.botao {
+    -fx-background-color: rgb(26, 118, 255);
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-border-color: white;
+}
