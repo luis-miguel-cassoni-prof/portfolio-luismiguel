@@ -11,7 +11,6 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.nar
 *.ear
@@ -62,3 +61,4 @@ $RECYCLE.BIN/
 
 # API_Keys or sensible data
 *.txt
+*.json

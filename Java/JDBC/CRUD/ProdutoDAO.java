@@ -37,7 +37,7 @@ public class ProdutoDAO {
     }
 
     public Produto consultarPorId(int id) {
-        String sql = "SELECT * FROM produtos WHERE id = ?";
+        String sql = "SELECT * FROM produtos WHERE id_produto = ?";
 
         try (PreparedStatement pStatement = CONEXAO_DB.prepareStatement(sql)) {
             pStatement.setInt(1, id);
@@ -45,7 +45,7 @@ public class ProdutoDAO {
             try(ResultSet resultSet = pStatement.executeQuery()) {
                 if(resultSet.next()) {
                     Produto produto = new Produto();
-                    produto.setId(resultSet.getInt("id"));
+                    produto.setId(resultSet.getInt("id_produto"));
                     produto.setNome(resultSet.getString("nome"));
                     produto.setQuantidade(resultSet.getInt("quantidade"));
                     produto.setPreco(resultSet.getBigDecimal("preco"));
@@ -60,7 +60,7 @@ public class ProdutoDAO {
     }
 
     public void atualizar(Produto produto) {
-        String sql = "UPDATE produtos SET nome = ?, quantidade = ?, preco = ?, status = ? WHERE id = ?";
+        String sql = "UPDATE produtos SET nome = ?, quantidade = ?, preco = ?, status = ? WHERE id_produto = ?";
         
         try (PreparedStatement pStatement = CONEXAO_DB.prepareStatement(sql)) {
             pStatement.setString(1, produto.getNome());
@@ -74,8 +74,8 @@ public class ProdutoDAO {
         }
     }
 
-    public void exlcuirPorId(int id) {
-        String sql = "DELETE FROM produtos WHERE ID = ?";
+    public void excluirPorId(int id) {
+        String sql = "DELETE FROM produtos WHERE id_produto = ?";
 
         try (PreparedStatement pStatement = CONEXAO_DB.prepareStatement(sql)) {
             pStatement.setInt(1, id);
@@ -94,7 +94,7 @@ public class ProdutoDAO {
             
             while(resultSet.next()) {
                 Produto produto = new Produto();
-                produto.setId(resultSet.getInt("id"));
+                produto.setId(resultSet.getInt("id_produto"));
                 produto.setNome(resultSet.getString("nome"));
                 produto.setQuantidade(resultSet.getInt("quantidade"));
                 produto.setPreco(resultSet.getBigDecimal("preco"));
