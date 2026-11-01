@@ -6,3 +6,5 @@ Sou Luís Miguel, estudante de Engenharia de Software e esse repositório serve 
 - Java
 - JavaFX
 - Git / Github
+- JDBC
+- Request e Response HTTP Java
